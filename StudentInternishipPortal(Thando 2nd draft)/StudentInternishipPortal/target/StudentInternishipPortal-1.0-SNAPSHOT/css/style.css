@@ -1,0 +1,73 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadingStyleSheet.css to edit this template
+ */
+/*
+    Created on : 27 Aug 2026, 18:43:55
+    Author     : ngema
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Glass Card - for all pages */
+form, .login-container, .card {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 40px;
+    border-radius: 20px;
+    width: 380px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+h2, h1 { text-align: center; margin-bottom: 25px; color: #fff; }
+label { font-size: 13px; color: #c9c9ff; margin-bottom: 5px; display: block; }
+
+input[type="text"], input[type="password"], input[type="email"] {
+    width: 100%; padding: 12px 15px; margin-bottom: 15px;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 10px; color: white; outline: none;
+}
+
+button, input[type="submit"] {
+    width: 100%; padding: 12px;
+    background: linear-gradient(90deg, #7f5af0, #2cb4e8);
+    border: none; border-radius: 10px; color: white; font-weight: 600; cursor: pointer;
+}
+
+/* === YOUR 3 COLORS === */
+
+/* 1. LOGIN - Midnight Blue */
+body.login {
+    background: radial-gradient(circle at 20% 30%, #1e3a5f 0%, #0a1931 40%, #000814 100%);
+    display: flex; justify-content: center; align-items: center;
+}
+
+/* 2. REGISTER - Lavender / Soft Purple */
+body.register {
+    background: radial-gradient(circle at 20% 30%, #c4b5fd 0%, #a78bfa 25%, #7c3aed 55%, #2e1065 100%);
+    display: flex; justify-content: center; align-items: center;
+}
+body.register form { background: rgba(255, 255, 255, 0.9); }
+body.register h2, body.register label { color: #4c1d95; }
+body.register input { background: white; color: #4c1d95; border-color: #ddd6fe; }
+
+/* 3. DASHBOARD - Slate Gray with blue tint */
+body.dashboard {
+    background: radial-gradient(circle at top left, #64748b 0%, #475569 30%, #334155 65%, #1e293b 100%);
+    display: block; padding: 30px;
+}
+
